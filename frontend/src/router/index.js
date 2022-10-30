@@ -15,12 +15,12 @@ const router = createRouter({
       component: () => import('../views/contacts/ContactIndex.vue')
     },
     {
-      path: '/contacts',
+      path: '/contacts/create',
       name: 'ContactCreate',
       component: () => import('../views/contacts/ContactCreate.vue')
     },
     {
-      path: '/contacts',
+      path: '/contacts/:id/edit',
       name: 'ContactEdit',
       component: () => import('../views/contacts/ContactEdit.vue')
     },
