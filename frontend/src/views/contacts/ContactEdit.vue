@@ -20,7 +20,7 @@ onMounted(() => getContact(props.id))
             <form class="max-w-xl mx-auto p-5 bg-white show-md round-md border border-gray-300 rounded"
                 @submit.prevent="updateContact($route.params.id)">
                 <div class="space-y-6">
-                    <label for="contacts" class="block mb-2 text-xl font-medium text-black dark:text-black">Create
+                    <label for="contacts" class="block mb-2 text-xl font-medium text-black dark:text-black">Edit
                         Contact</label>
                     <div class="mb-6">
                         <label for="firstName" class="block mb-2 text-sm font-medium text-black dark:text-black">First

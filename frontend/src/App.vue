@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="text-x1 font-bold text-white">
           <RouterLink class="px-4 py-2 mr-4" to="/">Home</RouterLink>
           <RouterLink class="px-4 py-2 mr-4" to="/contacts">Contacts</RouterLink>
-          <RouterLink class="px-4 py-2 mr-4" to="/ContactGroupIndex">Contact Groups</RouterLink>
+          <RouterLink class="px-4 py-2 mr-4" to="/ContactGroups">Contact Groups</RouterLink>
         </div>
       </div>
     </header>
