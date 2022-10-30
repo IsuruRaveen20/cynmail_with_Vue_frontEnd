@@ -25,6 +25,23 @@ const router = createRouter({
       component: () => import('../views/contacts/ContactEdit.vue'),
       props:true,
     },
+
+    {
+      path: '/contactGroups',
+      name: 'ContactGroupIndex',
+      component: () => import('../views/contactGroups/ContactGroupIndex.vue')
+    },
+    {
+      path: '/contactGroups/create',
+      name: 'ContactGroupCreate',
+      component: () => import('../views/contactGroups/ContactGroupCreate.vue')
+    },
+    {
+      path: '/contactGroups/:id/edit',
+      name: 'ContactGroupEdit',
+      component: () => import('../views/contactGroups/ContactGroupEdit.vue'),
+      props:true,
+    },
   ],
 })
 
