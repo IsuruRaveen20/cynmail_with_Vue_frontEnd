@@ -46,9 +46,9 @@ onMounted(() => getContacts());
                         <td class="py-4 px-6 dark:text-black">
                             ${{ contact.email }}
                         </td>
-                        <td class="py-4 px-6">
-                            Edit/Delete
-                            <!-- <a href="#" class="font-medium text-blue-900 dark:text-blue-500 hover:underline">Edit</a> -->
+                        <td class="py-4 px-6 space-x-2">
+                            <RouterLink :to="{name:'ContactEdit', params: {id:contact.id}}" class="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded">Edit</RouterLink>
+                            <RouterLink :to="{name:'ContactEdit', params: {id:contact.id}}" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded">Delete</RouterLink>
                         </td>
                     </tr>
                 </tbody>
