@@ -17,7 +17,7 @@ export default function useContacts(){
     };
 
     const getContact = async (id) => {
-        const response = await axios.get("contacts" + id);
+        const response = await axios.get("contacts/" + id);
         contact.value = response.data.data;
     }
 
@@ -34,8 +34,8 @@ export default function useContacts(){
 
     const updateContact = async (id) => {
         try{
-            await axios.put("contacts/" + id, data.value);
-            router.push({name:"ContactIndex"});
+            await axios.put("contacts/" + id, contact.value);
+            await router.push({name:"ContactIndex"});
         } catch(error){
             if(error.response.status === 422){
                 errors.value = error.response.data.errors;
