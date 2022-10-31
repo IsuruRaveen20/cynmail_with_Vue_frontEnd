@@ -1,14 +1,15 @@
 <script setup>
-import useContactGroups from '../../composabiles/contacts';
+import useContactGroups from '../../composabiles/contactGroups';
 import { onMounted } from 'vue';
 
-const { contact, getContactGroup, updateContactGroup, errors }  = useContactGroups();
+const { contactGroup, getContactGroup, updateContactGroup, errors }  = useContactGroups();
 
 const props = defineProps({
     id:{
         required:true,
         type:String,
     },
+    
 });
 
 onMounted(() => getContactGroup(props.id))

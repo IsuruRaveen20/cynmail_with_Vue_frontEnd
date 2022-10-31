@@ -25,6 +25,9 @@ const form = reactive({
                         </div>
                     </div>
                 </div>
+                <div class="mt-4">
+                        <button class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 text-white rounded">Submit</button>
+                    </div>
             </form>
         </div>
     </div>
